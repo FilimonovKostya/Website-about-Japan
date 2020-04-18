@@ -19,7 +19,7 @@ html {
       rgba(53, 66, 103, 0.0001) 0%,
       #151824 95.04%
     ),
-    url(/images/main-bg.png);
+    url(images/main-bg.png);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@ html {
   justify-content: space-between;
 }
 .header__logo {
-  background-image: url(/images/icons/odigo.svg);
+  background-image: url(images/icons/odigo.svg);
 
   width: 82px;
   height: 31px;
@@ -332,55 +332,53 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
-.block-culture__about{
-   width: 519px;
-   float: right;
-   margin-top: 26px;
-
+.block-culture__about {
+  width: 519px;
+  float: right;
+  margin-top: 26px;
 }
-.block-culture__img{
-float: left;
-clear: both;
+.block-culture__img {
+  float: left;
+  clear: both;
 }
 
-.block-culture{
+.block-culture {
   width: 1271px;
   margin: 131px auto;
   overflow: hidden;
 }
 
-.block-culture__title{
+.block-culture__title {
   color: #102746;
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 85px;
-
 }
-.block-culture__text{
+.block-culture__text {
   font-size: 16px;
   line-height: 24px;
   color: #102746;
   display: inline-block;
   width: 519px;
- margin-bottom: 58px;
+  margin-bottom: 58px;
 }
-.left{
+.left {
   float: left;
 }
-.rigth{
+.rigth {
   float: right;
 }
-.down{
+.down {
   margin-top: 30px;
   margin-bottom: 45px;
 }
-.block-travel{
+.block-travel {
   width: 1264px;
   margin: 152px auto;
   overflow: hidden;
 }
-.block-travel__card{
+.block-travel__card {
   width: 390px;
   height: auto;
   color: white;
@@ -390,11 +388,11 @@ clear: both;
   margin-bottom: 60px;
   float: left;
 }
-.block-travel__img{
+.block-travel__img {
   position: relative;
   margin-bottom: 45px;
 }
-.block-travel__figcaption{
+.block-travel__figcaption {
   position: absolute;
   bottom: 5px;
   display: flex;
@@ -403,51 +401,50 @@ clear: both;
   background: rgba(21, 24, 36, 0.6);
   width: 100%;
 }
-.figcaption_text{
+.figcaption_text {
   margin-left: 25px;
   text-transform: uppercase;
   margin-right: 157px;
 }
-.numbers{
+.numbers {
   position: relative;
   margin-right: 34px;
 }
-.numbers::after{
-  content: url(/images/icons/heart.svg);
+.numbers::after {
+  content: url(images/icons/heart.svg);
   position: absolute;
   margin-left: 4px;
 }
-.dialgo{
+.dialgo {
   position: relative;
-
 }
-.dialgo::after{
-  content: url(/images/icons/dialog.svg);
+.dialgo::after {
+  content: url(images/icons/dialog.svg);
   position: absolute;
   margin-left: 12px;
 }
-.block-travel__text{
+.block-travel__text {
   color: #102746;
   margin-bottom: 31px;
   font-size: 16px;
   line-height: 24px;
 }
-input[value="see more"]{
+input[value="see more"] {
   width: 118px;
   height: 42px;
-  background: #006DFE;
+  background: #006dfe;
   padding: 12px 19px;
   text-transform: uppercase;
   color: white;
   font-size: 16px;
 }
-.mg{
-  margin:0 45px
+.mg {
+  margin: 0 45px;
 }
 .big-bg-picture {
   height: 609px;
   width: 100%;
-  background-image: url(/images/footer-img.png);
+  background-image: url(images/footer-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -455,7 +452,7 @@ input[value="see more"]{
 .big-bg-picture__button {
   width: 112px;
   height: 112px;
-  margin:  auto ;
+  margin: auto;
   padding-top: 249px;
 }
 .big-bg-picture__circle {
@@ -467,7 +464,6 @@ input[value="see more"]{
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 .big-bg-picture__tringle {
   width: 0;
@@ -478,13 +474,13 @@ input[value="see more"]{
   border-color: transparent transparent transparent black;
   margin-left: 7px;
 }
-.footer{
-  background: #0E1D28;
+.footer {
+  background: #0e1d28;
   height: 370px;
   position: relative;
   padding-top: 118px;
 }
-.footer-wrap{
+.footer-wrap {
   width: 1080px;
   height: 135px;
   margin: auto;
@@ -492,28 +488,26 @@ input[value="see more"]{
   display: flex;
   justify-content: space-between;
 }
-  
 
-.footer-wrap-links{
+.footer-wrap-links {
   width: 545px;
 
   display: flex;
   justify-content: space-around;
 }
-.big-choise{
+.big-choise {
   color: white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
-
 }
-.footer__navigation li a{
+.footer__navigation li a {
   text-decoration: none;
   display: inline-block;
   color: white;
   font-size: 16px;
   margin-bottom: 3px;
 }
-li{
+li {
   list-style: none;
 }

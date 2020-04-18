@@ -19,7 +19,7 @@ html {
       rgba(53, 66, 103, 0.0001) 0%,
       #151824 95.04%
     ),
-    url(images/main-bg.png);
+    url(/images/main-bg.png);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@ html {
   justify-content: space-between;
 }
 .header__logo {
-  background-image: url(images/icons/odigo.svg);
+  background-image: url(/images/icons/odigo.svg);
 
   width: 82px;
   height: 31px;
@@ -444,7 +444,7 @@ input[value="see more"] {
 .big-bg-picture {
   height: 609px;
   width: 100%;
-  background-image: url(images/footer-img.png);
+  background-image: url(/images/footer-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

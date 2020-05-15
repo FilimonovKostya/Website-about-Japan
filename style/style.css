@@ -2,58 +2,70 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: white;
+  min-width: 1262px;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 .first-block {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(53, 66, 103, 0.0001) 0%,
-      #151824 95.04%
-    ),
+      #151824 95.04%),
     url(/images/main-bg.png);
 
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
+
 .wrapper {
   max-width: 1065px;
   margin: 0 auto;
 }
+
 .header {
   padding-top: 56px;
 }
+
 .header__sidebar {
   display: flex;
   justify-content: space-between;
 }
+
 .header__logo {
   background-image: url(/images/icons/odigo.svg);
 
   width: 82px;
   height: 31px;
 }
+
 .header__navigation-items {
   display: flex;
 }
+
 .links {
   list-style: none;
 }
+
 .links {
   margin-right: 82px;
 }
+
 .links:last-child {
   margin-right: 0;
 }
+
 .links a {
   color: white;
   font-size: 18px;
@@ -61,17 +73,30 @@ html {
   font-weight: normal;
   text-decoration: none;
 }
+
 .links a:hover {
   opacity: 0.6;
 }
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 110px;
+  height: 100%;
+  width: 100%;
+}
+
+
 .intro {
   width: 885px;
   height: 330px;
-  margin-left: 420px;
-  margin-top: 263px;
+
   display: flex;
   flex-direction: column;
 }
+
 .intro__title {
   font-size: 50px;
   font-style: normal;
@@ -79,6 +104,7 @@ html {
   width: 619px;
   margin-bottom: 22px;
 }
+
 .intro__subtitle {
   font-size: 16px;
   font-weight: normal;
@@ -86,11 +112,13 @@ html {
   width: 546px;
   margin-bottom: 59px;
 }
+
 .forms {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .like {
   font-size: 18px;
   font-weight: 600;
@@ -98,6 +126,7 @@ html {
   margin-left: 33px;
   width: max-content;
 }
+
 .intro__forms {
   position: relative;
   width: 297px;
@@ -116,10 +145,12 @@ input[type="button"] {
   outline: none;
   cursor: pointer;
 }
+
 #we,
 #you {
   visibility: hidden;
 }
+
 .radio-check {
   width: 20px;
   height: 20px;
@@ -127,21 +158,26 @@ input[type="button"] {
   border-radius: 50%;
   border: 2px solid white;
 }
+
 .radio-check:hover {
   background-color: rgb(139, 184, 226);
 }
+
 .intro__line {
   margin-top: 22px;
   width: 297px;
   border: 2px solid #bfc0c5;
 }
+
 .white-fon {
   width: 1262px;
   height: 230px;
   margin: 0 auto;
-  margin-top: 97px;
+  bottom: 0;
   background-color: white;
+  position: absolute;
 }
+
 .white-fon h2 {
   color: #102746;
   font-weight: 600;
@@ -150,6 +186,7 @@ input[type="button"] {
   padding-top: 93px;
   padding-left: 99px;
 }
+
 .white-fon-sec {
   width: 1262px;
   height: 435px;
@@ -158,26 +195,31 @@ input[type="button"] {
   box-shadow: 0px 20px 20px rgba(21, 24, 36, 0.15993);
   color: #000000;
 }
+
 .about-cultere__blok {
   width: 317px;
   height: 288px;
   margin: 0 55px;
 }
+
 .about-culter-img {
   margin-bottom: 37px;
 }
+
 .ablout-culture__titile {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 26px;
 }
+
 .about-culture__text {
   font-size: 16px;
   line-height: 24px;
   color: black;
   margin-bottom: 39px;
 }
+
 .leran {
   color: #006dfe;
   font-size: 16px;
@@ -185,15 +227,18 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .arrow {
   display: inline-block;
   margin-left: 26px;
 }
+
 .wrapper-be {
   max-width: 1065px;
   display: flex;
   margin: 0 auto;
 }
+
 .trip-japan {
   width: 1264px;
   height: 735px;
@@ -201,11 +246,14 @@ input[type="button"] {
   display: flex;
   flex-wrap: wrap;
 }
+
 .trip-japan__title {
   width: inherit;
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
+
 .trip-japan__heading {
   font-weight: 500;
   font-size: 35px;
@@ -213,12 +261,14 @@ input[type="button"] {
   color: #102746;
   position: relative;
   margin-bottom: 36px;
+  padding: 0 10px;
 }
+
 .trip-japan__heading::after {
   content: "";
   position: absolute;
   bottom: -7px;
-  left: 0;
+  left: 10px;
   display: inline-block;
   width: 253px;
   height: 3px;
@@ -239,6 +289,7 @@ input[type="button"] {
   display: flex;
   flex-wrap: wrap;
 }
+
 img[alt="fuji"] {
   width: 646px;
   height: 354px;
@@ -246,6 +297,7 @@ img[alt="fuji"] {
   background-repeat: no-repeat;
   margin-left: -19px;
 }
+
 img[alt="kyoto"] {
   width: 662px;
   height: 354px;
@@ -258,6 +310,7 @@ img[alt="kyoto"] {
   width: 100%;
   display: flex;
 }
+
 img[alt="tokyo"],
 img[alt="nli"],
 img[alt="sappro"] {
@@ -265,10 +318,12 @@ img[alt="sappro"] {
   height: 283px;
   margin-right: 10px;
 }
+
 .big-pictures {
   width: 100%;
   height: 335px;
 }
+
 .fuji,
 .kyoto,
 .tokyo,
@@ -277,6 +332,7 @@ img[alt="sappro"] {
   position: relative;
   display: inline-block;
 }
+
 .fuji::after {
   content: "Mount Fuji";
   display: inline-block;
@@ -288,6 +344,7 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
+
 .kyoto::after {
   content: "Kyoto";
   display: inline-block;
@@ -299,6 +356,7 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
+
 .tokyo::after {
   content: "Tokyo";
   display: inline-block;
@@ -310,6 +368,7 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
+
 .nli::after {
   content: "Niigata";
   display: inline-block;
@@ -321,6 +380,7 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
+
 .sappro::after {
   content: "Sappro";
   display: inline-block;
@@ -332,14 +392,17 @@ img[alt="sappro"] {
   bottom: 27px;
   left: 29px;
 }
+
 .block-culture__about {
   width: 519px;
   float: right;
   margin-top: 26px;
 }
+
 .block-culture__img {
   float: left;
   clear: both;
+  padding: 0 10px;
 }
 
 .block-culture {
@@ -355,6 +418,7 @@ img[alt="sappro"] {
   line-height: 40px;
   margin-bottom: 85px;
 }
+
 .block-culture__text {
   font-size: 16px;
   line-height: 24px;
@@ -363,21 +427,27 @@ img[alt="sappro"] {
   width: 519px;
   margin-bottom: 58px;
 }
+
 .left {
   float: left;
+  padding: 0 10px;
 }
+
 .rigth {
   float: right;
 }
+
 .down {
   margin-top: 30px;
   margin-bottom: 45px;
 }
+
 .block-travel {
   width: 1264px;
   margin: 152px auto;
   overflow: hidden;
 }
+
 .block-travel__card {
   width: 390px;
   height: auto;
@@ -387,11 +457,14 @@ img[alt="sappro"] {
   font-weight: 500;
   margin-bottom: 60px;
   float: left;
+  padding: 0 10px;
 }
+
 .block-travel__img {
   position: relative;
   margin-bottom: 45px;
 }
+
 .block-travel__figcaption {
   position: absolute;
   bottom: 5px;
@@ -399,36 +472,43 @@ img[alt="sappro"] {
   align-items: center;
   height: 55px;
   background: rgba(21, 24, 36, 0.6);
-  width: 100%;
+  width: 104%;
 }
+
 .figcaption_text {
   margin-left: 25px;
   text-transform: uppercase;
   margin-right: 157px;
 }
+
 .numbers {
   position: relative;
   margin-right: 34px;
 }
+
 .numbers::after {
   content: url(images/icons/heart.svg);
   position: absolute;
   margin-left: 4px;
 }
+
 .dialgo {
   position: relative;
 }
+
 .dialgo::after {
   content: url(images/icons/dialog.svg);
   position: absolute;
   margin-left: 12px;
 }
+
 .block-travel__text {
   color: #102746;
   margin-bottom: 31px;
   font-size: 16px;
   line-height: 24px;
 }
+
 input[value="see more"] {
   width: 118px;
   height: 42px;
@@ -438,9 +518,11 @@ input[value="see more"] {
   color: white;
   font-size: 16px;
 }
+
 .mg {
   margin: 0 45px;
 }
+
 .big-bg-picture {
   height: 609px;
   width: 100%;
@@ -449,12 +531,14 @@ input[value="see more"] {
   background-size: cover;
   background-position: center;
 }
+
 .big-bg-picture__button {
   width: 112px;
   height: 112px;
   margin: auto;
   padding-top: 249px;
 }
+
 .big-bg-picture__circle {
   width: 112px;
   height: 112px;
@@ -465,6 +549,7 @@ input[value="see more"] {
   align-items: center;
   justify-content: center;
 }
+
 .big-bg-picture__tringle {
   width: 0;
   height: 0;
@@ -474,12 +559,14 @@ input[value="see more"] {
   border-color: transparent transparent transparent black;
   margin-left: 7px;
 }
+
 .footer {
   background: #0e1d28;
   height: 370px;
   position: relative;
   padding-top: 118px;
 }
+
 .footer-wrap {
   width: 1080px;
   height: 135px;
@@ -495,12 +582,14 @@ input[value="see more"] {
   display: flex;
   justify-content: space-around;
 }
+
 .big-choise {
   color: white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
 }
+
 .footer__navigation li a {
   text-decoration: none;
   display: inline-block;
@@ -508,6 +597,158 @@ input[value="see more"] {
   font-size: 16px;
   margin-bottom: 3px;
 }
+
 li {
   list-style: none;
 }
+
+
+
+
+/* медиа */
+@media only screen and (max-width:1000px) {
+  .links a {
+    font-size: 23px;
+  }
+
+  .intro__subtitle {
+    font-size: 23px;
+    line-height: 1.6;
+  }
+
+  .like {
+    font-size: 23px;
+  }
+
+  .intro__forms {
+    width: 100%;
+    margin-right: 12px;
+  }
+
+  .intro__line {
+    width: 100%;
+    position: absolute;
+  }
+
+  .ablout-culture__titile {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .about-culture__text {
+    font-size: 20px;
+  }
+
+  .ablout-culture__titile {
+    min-width: max-content;
+
+  }
+
+  .about-culture__text {
+    min-width: 230px;
+  }
+
+  .block-culture__text {
+    font-size: 23px;
+    line-height: 1.6;
+  }
+
+  .rigth {
+    margin-top: 8px;
+  }
+
+  .block-travel__text {
+    font-size: 23px;
+    line-height: 1.6;
+  }
+
+  input[value="see more"] {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .footer__navigation>li a {
+    font-size: 23px;
+    line-height: 1.5;
+  }
+
+  .footer-wrap__links>span {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+}
+
+
+
+@media only screen and (max-width:758px) {
+  .links a {
+    font-size: 30px;
+  }
+
+  .intro__subtitle {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .white-fon {
+    max-width: 800px;
+    height: 170px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .white-fon h2{
+    padding: 0;
+  }
+  .white-fon-sec{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  }
+  .about-cultere__blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+    .wrapper-be{
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px 0;
+    }
+    .about-culture__text{
+      font-size: 30px;
+    line-height: 1.4;
+    }
+    .ablout-culture__titile{
+      font-size: 26px;
+    }
+    .block-culture__text{
+      font-size: 30px;
+      line-height: 1.4;
+    }
+    .block-culture__title{
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .block-travel__text {
+font-size: 30px;
+    }
+    .footer__navigation>li a{
+      font-size: 30px;
+    }
+    .footer-wrap-links{
+      width: 100%;
+    }
+  }
+
+
+
+  @media only screen and (max-width:540px){
+    .heder__navigation{
+      display: none;
+    }
+  }

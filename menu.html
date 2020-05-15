@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5081f59ef3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+    <nav class="heder__navigation">
+        <ul class="header__navigation-items">
+          <li class="links"><a href="#">Articles</a></li>
+          <li class="links"><a href="#">Locations</a></li>
+          <li class="links"><a href="#">Videos</a></li>
+          <li class="links"><a href="#">Sign in</a></li>
+        </ul>
+        <label for="menu" class="bars-toggle"> <i class="fas fa-bars"></i> </label> 
+        <input type="checkbox" id="menu" class="menu-toggle">
+      </nav>
+    </div>
+      
+</body>
+</html>
+
+<style>
+    .header__navigation-items{
+        display: none ;
+    }
+    .header__navigation-items{
+        background-color: lightgreen;
+        position: relative;
+    }
+    .links a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
+    .bars-toggle{
+        cursor: pointer;
+    }
+       .header__navigation-items:active + #menu:checked {
+        display: block;
+}
+</style>

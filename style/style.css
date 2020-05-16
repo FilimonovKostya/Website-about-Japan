@@ -241,7 +241,7 @@ input[type="button"] {
 
 .trip-japan {
   width: 1264px;
-  height: 735px;
+  height: 100%;
   margin: 131px auto;
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +270,7 @@ input[type="button"] {
   bottom: -7px;
   left: 10px;
   display: inline-block;
-  width: 253px;
+  width: 100%;
   height: 3px;
   border: 2px solid #006dfe;
 }
@@ -286,42 +286,51 @@ input[type="button"] {
 
 .trip-japan__pcitures {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 img[alt="fuji"] {
-  width: 646px;
-  height: 354px;
+    width: 100%;
+    height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -19px;
+  
+  
 }
 
 img[alt="kyoto"] {
-  width: 662px;
-  height: 354px;
+  max-width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -30px;
+  
 }
 
-.small-pictures {
-  width: 100%;
-  display: flex;
-}
+
 
 img[alt="tokyo"],
 img[alt="nli"],
 img[alt="sappro"] {
-  width: 408px;
-  height: 283px;
-  margin-right: 10px;
+  max-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 5px;
+}
+
+
+.small-pictures {
+  width:max-content;
+  display: flex;
+  margin-top: 14px;
+  
 }
 
 .big-pictures {
   width: 100%;
-  height: 335px;
+  height: 100%;
 }
 
 .fuji,
@@ -747,8 +756,274 @@ font-size: 30px;
 
 
 
-  @media only screen and (max-width:540px){
+  @media only screen and (max-width:600px){
     .heder__navigation{
       display: none;
+    }
+    .intro__subtitle{
+      font-size: 40px;
+    }
+    .intro{
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      padding: 0 15px;
+    }
+    .intro__title{
+      width: auto;
+    }
+    .white-fon{
+      transform: translateY(100%);
+      box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.7);
+    }
+    .white-fon h2{
+      font-size: 50px;
+    }
+    .wrapper-be{
+      padding: 15% 0;
+    }
+    .about-cultere__blok{
+      width: 100%;
+      margin: 3% 0;
+    }
+    .content{
+      height: 79%;
+    }
+    .forms{
+      width: 50%;
+      height: inherit;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: -10%;
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+    }
+    input[type="button"] {
+      font-size: 30px;
+      width: 50%;
+    }
+    .like{
+      font-size: 35px;
+    }
+    .ablout-culture__titile {
+      font-size: 45px;  
+    }
+    .about-culture__text{
+      font-size: 40px;
+    }
+    .leran {
+      font-size: 30px;
+    }
+    .trip-japan__heading{
+      font-size: 40px;
+    }
+    .lerann {
+      font-size: 30px;
+    }
+    .trip-japan{
+      height: 100%;
+      width: 100%;
+    }
+    .trip-japan__pcitures {
+      height: 100%;
+      width: 100%;
+    }
+    img[alt="tokyo"],
+    img[alt="nli"],
+    img[alt="sappro"],
+    img[alt="kyoto"],
+    img[alt="fuji"] {
+     width: 100%;
+    }
+    .big-pictures{
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 0 15px;
+     
+    }
+    .fuji,.kyoto{
+      display: block;
+    }
+     .small-pictures{
+       display: block;
+       width: 100%;
+       margin: 0 10px;
+     }
+     .tokyo, .nli, .sappro{
+       display: block;
+     }
+     .block-culture{
+       float: none;
+       margin: 0;
+       width: 100%;
+     }
+     .block-culture__img{
+       float: none;
+       clear: none;
+     }
+     .block-culture__about{
+       float: none;
+       width: 100%;
+       display: flex;
+       justify-self: center;
+       align-items: center;
+       flex-direction: column ;
+     }
+     .block-culture__text{
+       width: 80%;
+       text-align: center;
+     }
+     img[alt="samurai"],img[alt="red"]{
+       width: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+     }
+     .block-culture__title {
+       margin-bottom: 20px  ;
+     }
+     .block-travel {
+      width: 100%;
+    }
+    .block-travel img{
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .flex-card-img{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mg{
+      margin: 0 0px;
+    }
+    .block-travel__card{
+      width: 50%;
+    }
+    .block-travel__figcaption {
+      width: 100%;
+      height: 15%;
+    }
+    .block-travel__card{
+      font-size: 40px;
+    }
+    .block-travel__text {
+    font-size: 35px;
+    }
+    input[value="see more"]{
+      height: auto  ;
+    }
+    .footer-wrap{
+      height: 100%;
+      padding-bottom: 50px;
+    }
+  }
+
+
+  @media only screen and (max-width: 480px){
+    .block-culture__title {
+      font-size: 60px;
+      margin-bottom: 5%;
+    }
+    .block-culture__text{
+      font-size: 50px;
+      width: 95%;
+    }
+    .leran{
+      font-size: 40px;
+    }
+    .arrow{
+      display: none;
+    }
+    .block-culture__about{
+      margin-bottom: 5%;
+    }
+    .block-travel__card{
+      width: 100%;
+    }
+    .block-travel__text{
+      font-size: 45px;
+    }
+    input[type="button"] {
+    font-size: 35px;  
+    border-radius: 40px;
+    }
+    .block-travel__button{
+      text-align: center;
+    }
+      .block-travel__card{
+      margin: 5% 0px;
+      margin-bottom: 0px;
+    }
+    .block-travel__figcaption{
+      justify-content: space-around;
+    }
+    .figcaption_text,.numbers{
+      margin: 0;
+    }
+    .footer{
+      height: 100%;
+    }
+    .footer-wrap{
+      display: block;
+    }
+    .footer-wrap-links{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .footer-wrap__links{
+      margin: 5% 0;
+    }
+    .footer-wrap__links>span{
+      font-size: 45px;
+    }
+    .footer__navigation>li a {
+      font-size: 40px;
+      margin: 12px 0;
+    }
+    .trip-japan__heading{
+      font-size: 50px;
+    }
+    
+    .about-culture__text{
+      font-size: 50px;
+    }
+    .intro__subtitle {
+      display: none;
+    }
+    .intro__title{
+     display: none;
+    }
+    .forms{
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .button{
+      width: 100%;
+    }
+    input[type="button"]{
+      height: auto;
+    }
+  }
+
+
+  @media only screen and (max-width:380px){
+    .like{
+      font-size: 60px;
+    }
+    .intro__line {
+      min-width: 800px;
+      margin-top: 60px;
     }
   }

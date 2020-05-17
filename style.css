@@ -18,10 +18,12 @@ html {
 }
 
 .first-block {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(53, 66, 103, 0.0001) 0%,
-      #151824 95.04%),
-    url(images/mainbg.png);
+      #151824 95.04%
+    ),
+    url(images/japany.png);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +46,7 @@ html {
 }
 
 .header__logo {
-  background-image: url(images/icons/odigo.svg);
+  background-image: url(/images/icons/odigo.svg);
 
   width: 82px;
   height: 31px;
@@ -78,7 +80,6 @@ html {
   opacity: 0.6;
 }
 
-
 .content {
   display: flex;
   justify-content: center;
@@ -87,7 +88,6 @@ html {
   height: 100%;
   width: 100%;
 }
-
 
 .intro {
   width: 885px;
@@ -296,8 +296,6 @@ img[alt="fuji"] {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
-
 }
 
 img[alt="kyoto"] {
@@ -305,10 +303,7 @@ img[alt="kyoto"] {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
-
-
 
 img[alt="tokyo"],
 img[alt="nli"],
@@ -320,12 +315,10 @@ img[alt="sappro"] {
   padding: 0 5px;
 }
 
-
 .small-pictures {
   width: max-content;
   display: flex;
   margin-top: 14px;
-
 }
 
 .big-pictures {
@@ -535,7 +528,7 @@ input[value="see more"] {
 .big-bg-picture {
   height: 609px;
   width: 100%;
-  background-image: url(/images/footer-img.png);
+  background-image: url(images/footer-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -611,11 +604,8 @@ li {
   list-style: none;
 }
 
-
-
-
 /* медиа */
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   .links a {
     font-size: 23px;
   }
@@ -650,7 +640,6 @@ li {
 
   .ablout-culture__titile {
     min-width: max-content;
-
   }
 
   .about-culture__text {
@@ -676,21 +665,19 @@ li {
     font-size: 20px;
   }
 
-  .footer__navigation>li a {
+  .footer__navigation > li a {
     font-size: 23px;
     line-height: 1.5;
   }
 
-  .footer-wrap__links>span {
+  .footer-wrap__links > span {
     font-size: 30px;
     display: inline-block;
     margin-bottom: 18px;
   }
 }
 
-
-
-@media only screen and (max-width:758px) {
+@media only screen and (max-width: 758px) {
   .links a {
     font-size: 30px;
   }
@@ -717,7 +704,6 @@ li {
     display: flex;
     align-items: center;
     height: 100%;
-
   }
 
   .about-cultere__blok {
@@ -756,7 +742,7 @@ li {
     font-size: 30px;
   }
 
-  .footer__navigation>li a {
+  .footer__navigation > li a {
     font-size: 30px;
   }
 
@@ -765,9 +751,7 @@ li {
   }
 }
 
-
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .heder__navigation {
     display: none;
   }
@@ -874,7 +858,6 @@ li {
     height: 100%;
     display: block;
     padding: 0 15px;
-
   }
 
   .fuji,
@@ -980,7 +963,6 @@ li {
   }
 }
 
-
 @media only screen and (max-width: 480px) {
   .block-culture__title {
     font-size: 60px;
@@ -1054,11 +1036,11 @@ li {
     margin: 5% 0;
   }
 
-  .footer-wrap__links>span {
+  .footer-wrap__links > span {
     font-size: 45px;
   }
 
-  .footer__navigation>li a {
+  .footer__navigation > li a {
     font-size: 40px;
     margin: 12px 0;
   }
@@ -1096,8 +1078,7 @@ li {
   }
 }
 
-
-@media only screen and (max-width:380px) {
+@media only screen and (max-width: 380px) {
   .like {
     font-size: 60px;
   }
